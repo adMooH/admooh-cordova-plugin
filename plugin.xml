@@ -28,6 +28,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/admooh/cordova/plugins/admooh/admoohPlugin.java" target-dir="src/android/com/admooh/cordova/plugins/admooh" />
+        <source-file src="src/android/com/admooh/cordova/plugins/AdmoohSignage.java" target-dir="src/android/com/admooh/cordova/plugins/admooh" />
     </platform>
 </plugin>
