@@ -1,4 +1,4 @@
-package com.admooh.cordova.plugins.admooh;
+package com.admooh.cordova.plugins.signage;
 
 // The native Toast API
 import android.widget.Toast;
@@ -11,7 +11,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class AdmoohSignage extends CordovaPlugin {
+public class AdmoohSignagePlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) {

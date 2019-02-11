@@ -24,10 +24,10 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="admoohPlugin">
-                <param name="android-package" value="com.admooh.cordova.plugins.admooh"/>
+                <param name="android-package" value="com.admooh.cordova.plugins.signage"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/admooh/cordova/plugins/AdmoohSignage.java" target-dir="src/android/com/admooh/cordova/plugins/admooh" />
+        <source-file src="src/android/com/admooh/cordova/plugins/signage/AdmoohSignage.java" target-dir="src/android/com/admooh/cordova/plugins/signage" />
     </platform>
 </plugin>
