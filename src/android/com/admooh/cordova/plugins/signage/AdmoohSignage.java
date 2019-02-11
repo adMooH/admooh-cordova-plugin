@@ -11,7 +11,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class AdmoohSignagePlugin extends CordovaPlugin {
+public class AdmoohSignage extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) {
