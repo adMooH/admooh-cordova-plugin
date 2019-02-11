@@ -1,0 +1,31 @@
+{
+  "name": "admooh-plugin",
+  "version": "1.0.0",
+  "description": "Plugin for integration between admooh signage and admooh tv",
+  "cordova": {
+    "id": "cordova-plugin-admooh",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adMooH/admooh-cordova-plugin.git"
+  },
+  "keywords": [
+    "admooh",
+    "tv",
+    "signage",
+    "cordova"
+  ],
+  "engines": {
+    "name": "cordova",
+    "version": ">=3.0.0"
+  },
+  "author": "Ademir Pereira <ademirspr@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adMooH/admooh-cordova-plugin/issues"
+  },
+  "homepage": "https://github.com/adMooH/admooh-cordova-plugin#readme"
+}

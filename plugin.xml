@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-admooh" version="1.0.0">
+    <name>adMooHPlugin</name>
+
+    <description>Plugin for integration between admooh signage and admooh tv.</description>
+    <license>MIT</license>
+
+  	<author>Ademir Pereira</author>
+
+    <keywords>cordova,android,admooh,signage,tv</keywords>
+    <repo>https://github.com/adMooH/admooh-cordova-plugin.git</repo>
+    <issue>https://github.com/adMooH/admooh-cordova-plugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/admoohplugin.js" name="admoohPlugin">
+        <clobbers target="window.plugins.admoohlugin" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="admoohPlugin">
+                <param name="android-package" value="com.admooh.cordova.plugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/admoohPlugin.java" target-dir="src/com/admooh/cordova/plugin" />
+    </platform>
+</plugin>
