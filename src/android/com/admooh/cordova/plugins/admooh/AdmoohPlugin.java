@@ -1,4 +1,4 @@
-package com.admooh.cordova.plugin;
+package com.admooh.cordova.plugins.admooh;
 
 // The native Toast API
 import android.widget.Toast;
