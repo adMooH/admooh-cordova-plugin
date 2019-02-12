@@ -1,10 +1,11 @@
 package com.admooh.cordova.plugins.signage;
 
-import android.app.Activity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 // Cordova-required packages
+import com.amlogic.DTVPlayer.DTVActivity;
+
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
@@ -17,9 +18,10 @@ public class AdmoohSignage extends CordovaPlugin {
 
 		final String callAction = action.toUpperCase();
 
-		Activity activity = cordova.getActivity();
-		final RelativeLayout dtvLayout = activity.findViewById(com.admooh.tv.R.id.RelativeLayout_admooh_tv);
-		activity.runOnUiThread(() -> {
+		final DTVActivity player = (DTVActivity) cordova.getActivity();
+		final RelativeLayout dtvLayout = player.findViewById(com.admooh.tv.R.id.RelativeLayout_admooh_tv);
+
+		player.runOnUiThread(() -> {
 			switch (callAction) {
 			case "SHOWTV": {
 				dtvLayout.setVisibility(View.VISIBLE);
@@ -39,5 +41,4 @@ public class AdmoohSignage extends CordovaPlugin {
 		callbackContext.sendPluginResult(pluginResult);
 		return true;
 	}
-
 }
