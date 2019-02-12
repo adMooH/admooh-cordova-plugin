@@ -1,12 +1,12 @@
 function AdmoohPlugin() { };
 
 
-AdmoohPlugin.prototype.showTv = function (successCallback, errorCallback) {
-	cordova.exec(successCallback, errorCallback, 'AdmoohPlugin', 'showTv', []);
+AdmoohPlugin.prototype.showTv = function () {
+	cordova.exec(null, null, 'AdmoohPlugin', 'showTv', []);
 }
 
-AdmoohPlugin.prototype.hideTv = function (successCallback, errorCallback) {
-	cordova.exec(successCallback, errorCallback, 'AdmoohPlugin', 'hideTv', []);
+AdmoohPlugin.prototype.hideTv = function () {
+	cordova.exec(null, null, 'AdmoohPlugin', 'hideTv', []);
 }
 
 
